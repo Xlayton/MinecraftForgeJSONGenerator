@@ -1,0 +1,6 @@
+A couple notes to keep in mind before you use this program
+  While generating Item .json files, you only need to enter the mod ID(ex. exmod) once, 
+    and the name(ex. test_ingot) whenever you want to change input
+    
+  While generating Recipe .json files it uses the full item ID to make the file(ex. modID:itemName).
+    This is because of the possibility of using minecraft items alongside your own mods for crafting
