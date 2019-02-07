@@ -5,7 +5,7 @@ class GenerateRecipeJSON
     toAdd = ["pattern", "key"]
     toAdd[1] = getKeyJSON
     toAdd[0] = getPatternJSON
-    return (toAdd[0] + toAdd[1])
+    ("#{toAdd[0]}#{toAdd[1]}")
   end
 
   def self.getKeyJSON
@@ -63,7 +63,7 @@ class GenerateRecipeJSON
     amt = gets.chomp
     result += "\t\t\"count\": #{amt}\n"
     result += "\t}\n"
-    return result
+    result
   end
 
   def self.start

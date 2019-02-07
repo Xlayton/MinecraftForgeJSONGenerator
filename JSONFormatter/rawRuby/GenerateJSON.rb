@@ -20,7 +20,7 @@ class GenerateJSON
 
   def self.addItemToLang(itemName)
     values = itemName.split("_")
-    file = File.open((".\\files\\lang\\en_US.lang"), "a+")
+    file = File.open((".\\files\\lang\\en_US.lang"), "w+")
     toAdd = ("item.#{itemName}.name=")
     values.each do |x|
       toAdd += ("#{x.chomp.capitalize} ")
